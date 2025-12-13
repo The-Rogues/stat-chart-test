@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c14sth0a2vlx0"]
+
+[ext_resource type="Script" uid="uid://dd4m6efpabi7g" path="res://entities/StatChart/StatChartVec/StatChartVec_scn_main.gd" id="1_whnq2"]
+
+[node name="StatChartVec" type="Node2D"]
+script = ExtResource("1_whnq2")

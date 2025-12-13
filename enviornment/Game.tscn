@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgiqlv2kr3ftq"]
+
+[ext_resource type="Script" uid="uid://bvsntr7tdvgod" path="res://enviornment/Game_scn_main.gd" id="1_thad6"]
+[ext_resource type="PackedScene" uid="uid://36n1qwtck540" path="res://entities/StatChart/StatChart.tscn" id="2_8hsav"]
+[ext_resource type="PackedScene" uid="uid://bpegykryndjg1" path="res://entities/SpinBoxLabel/SpinBoxLabel.tscn" id="3_8hsav"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_thad6")
+
+[node name="StatChart" parent="." instance=ExtResource("2_8hsav")]
+position = Vector2(544, 256)
+slf_update_spd = 0.25
+
+[node name="SpinBoxLabel1" parent="." instance=ExtResource("3_8hsav")]
+offset_left = 224.0
+offset_top = 416.0
+offset_right = 352.0
+offset_bottom = 447.0
+slf_name = "Bottom"
+slf_min = 1
+slf_max = 5
+
+[node name="SpinBoxLabel2" parent="." instance=ExtResource("3_8hsav")]
+offset_left = 480.0
+offset_top = 416.0
+offset_right = 608.0
+offset_bottom = 447.0
+slf_name = "Right"
+slf_min = 1
+slf_max = 5
+
+[node name="SpinBoxLabel3" parent="." instance=ExtResource("3_8hsav")]
+offset_left = 736.0
+offset_top = 416.0
+offset_right = 864.0
+offset_bottom = 447.0
+slf_name = "Left"
+slf_min = 1
+slf_max = 5
+
+[connection signal="value_changed" from="SpinBoxLabel1" to="." method="_on_spin_box_label_1_value_changed"]
+[connection signal="value_changed" from="SpinBoxLabel2" to="." method="_on_spin_box_label_2_value_changed"]
+[connection signal="value_changed" from="SpinBoxLabel3" to="." method="_on_spin_box_label_3_value_changed"]

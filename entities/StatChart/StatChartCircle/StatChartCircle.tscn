@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7ykxomxde1wu"]
+
+[ext_resource type="Script" uid="uid://fxrutv125g44" path="res://entities/StatChart/StatChartCircle/StatChartCircle_scn_main.gd" id="1_eo2ou"]
+
+[node name="StatChartCircle" type="Node2D"]
+script = ExtResource("1_eo2ou")

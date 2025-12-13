@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://36n1qwtck540"]
+
+[ext_resource type="Script" uid="uid://c8mjnof0gvi7c" path="res://entities/StatChart/StatChart_scn_main.gd" id="1_324gl"]
+[ext_resource type="PackedScene" uid="uid://c7ykxomxde1wu" path="res://entities/StatChart/StatChartCircle/StatChartCircle.tscn" id="2_4ge6k"]
+[ext_resource type="PackedScene" uid="uid://dmqto7knijde8" path="res://entities/StatChart/StatChartPoint/StatChartPoint.tscn" id="3_4ge6k"]
+[ext_resource type="PackedScene" uid="uid://c14sth0a2vlx0" path="res://entities/StatChart/StatChartVec/StatChartVec.tscn" id="4_l6owj"]
+
+[node name="StatChart" type="Node2D"]
+script = ExtResource("1_324gl")
+
+[node name="CircleLayer1" parent="." instance=ExtResource("2_4ge6k")]
+
+[node name="CircleLayer2" parent="." instance=ExtResource("2_4ge6k")]
+
+[node name="CircleLayer3" parent="." instance=ExtResource("2_4ge6k")]
+
+[node name="CircleLayer4" parent="." instance=ExtResource("2_4ge6k")]
+
+[node name="CircleLayer5" parent="." instance=ExtResource("2_4ge6k")]
+
+[node name="Point1" parent="." instance=ExtResource("3_4ge6k")]
+
+[node name="Point2" parent="." instance=ExtResource("3_4ge6k")]
+
+[node name="Point3" parent="." instance=ExtResource("3_4ge6k")]
+
+[node name="Vec1" parent="." instance=ExtResource("4_l6owj")]
+
+[node name="Vec2" parent="." instance=ExtResource("4_l6owj")]
+
+[node name="Vec3" parent="." instance=ExtResource("4_l6owj")]
+
+[node name="AesLine1" parent="." instance=ExtResource("4_l6owj")]
+
+[node name="AesLine2" parent="." instance=ExtResource("4_l6owj")]
+
+[node name="AesLine3" parent="." instance=ExtResource("4_l6owj")]

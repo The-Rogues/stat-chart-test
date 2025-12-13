@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpegykryndjg1"]
+
+[ext_resource type="Script" uid="uid://dqoyofqq2khg4" path="res://entities/SpinBoxLabel/SpinBoxLabel_scn_main.gd" id="1_utlnd"]
+
+[node name="SpinBoxLabel" type="SpinBox"]
+offset_right = 86.5625
+offset_bottom = 31.0
+min_value = 1.0
+max_value = 5.0
+value = 1.0
+script = ExtResource("1_utlnd")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.032
+offset_left = 2.0
+offset_top = -24.008
+offset_right = 42.0
+offset_bottom = -2.0

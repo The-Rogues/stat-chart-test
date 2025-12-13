@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmqto7knijde8"]
+
+[ext_resource type="Script" uid="uid://oijqu8p2omlo" path="res://entities/StatChart/StatChartPoint/StatChartPoint_scn_main.gd" id="1_042re"]
+
+[node name="StatChartPoint" type="Node2D"]
+script = ExtResource("1_042re")

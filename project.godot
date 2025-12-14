@@ -11,5 +11,5 @@ config_version=5
 [application]
 
 config/name="stat-chart-test"
-run/main_scene="uid://bgiqlv2kr3ftq"
+run/main_scene="uid://6wivs1qqrv1"
 config/features=PackedStringArray("4.5", "Forward Plus")

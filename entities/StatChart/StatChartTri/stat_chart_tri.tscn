@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcf6en4ualk7r"]
+
+[ext_resource type="Script" uid="uid://ck8br13d6x0ix" path="res://entities/StatChart/StatChartTri/StatChartTri_scn_main.gd" id="1_tn70o"]
+
+[node name="StatChartTri" type="Node2D"]
+script = ExtResource("1_tn70o")

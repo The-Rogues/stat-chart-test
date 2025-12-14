@@ -1,37 +1,45 @@
-[gd_scene load_steps=5 format=3 uid="uid://36n1qwtck540"]
+[gd_scene load_steps=6 format=3 uid="uid://d2kihlqndp2vs"]
 
-[ext_resource type="Script" uid="uid://c8mjnof0gvi7c" path="res://entities/StatChart/StatChart_scn_main.gd" id="1_324gl"]
-[ext_resource type="PackedScene" uid="uid://c7ykxomxde1wu" path="res://entities/StatChart/StatChartCircle/StatChartCircle.tscn" id="2_4ge6k"]
-[ext_resource type="PackedScene" uid="uid://dmqto7knijde8" path="res://entities/StatChart/StatChartPoint/StatChartPoint.tscn" id="3_4ge6k"]
-[ext_resource type="PackedScene" uid="uid://c14sth0a2vlx0" path="res://entities/StatChart/StatChartVec/StatChartVec.tscn" id="4_l6owj"]
+[ext_resource type="Script" uid="uid://f2sqylq1ro23" path="res://entities/StatChart/StatChart_scn_main.gd" id="1_mbnrq"]
+[ext_resource type="PackedScene" uid="uid://c7ykxomxde1wu" path="res://entities/StatChart/StatChartCircle/StatChartCircle.tscn" id="2_mbnrq"]
+[ext_resource type="PackedScene" uid="uid://dmqto7knijde8" path="res://entities/StatChart/StatChartPoint/StatChartPoint.tscn" id="3_ksh6w"]
+[ext_resource type="PackedScene" uid="uid://c14sth0a2vlx0" path="res://entities/StatChart/StatChartVec/StatChartVec.tscn" id="4_ocsrx"]
+[ext_resource type="PackedScene" uid="uid://dcf6en4ualk7r" path="res://entities/StatChart/StatChartTri/stat_chart_tri.tscn" id="5_ksh6w"]
 
 [node name="StatChart" type="Node2D"]
-script = ExtResource("1_324gl")
+script = ExtResource("1_mbnrq")
+slf_update_spd = 0.25
 
-[node name="CircleLayer1" parent="." instance=ExtResource("2_4ge6k")]
+[node name="CircleLayer1" parent="." instance=ExtResource("2_mbnrq")]
 
-[node name="CircleLayer2" parent="." instance=ExtResource("2_4ge6k")]
+[node name="CircleLayer2" parent="." instance=ExtResource("2_mbnrq")]
 
-[node name="CircleLayer3" parent="." instance=ExtResource("2_4ge6k")]
+[node name="CircleLayer3" parent="." instance=ExtResource("2_mbnrq")]
 
-[node name="CircleLayer4" parent="." instance=ExtResource("2_4ge6k")]
+[node name="CircleLayer4" parent="." instance=ExtResource("2_mbnrq")]
 
-[node name="CircleLayer5" parent="." instance=ExtResource("2_4ge6k")]
+[node name="CircleLayer5" parent="." instance=ExtResource("2_mbnrq")]
 
-[node name="Point1" parent="." instance=ExtResource("3_4ge6k")]
+[node name="Point1" parent="." instance=ExtResource("3_ksh6w")]
+z_index = 4
 
-[node name="Point2" parent="." instance=ExtResource("3_4ge6k")]
+[node name="Point2" parent="." instance=ExtResource("3_ksh6w")]
+z_index = 4
 
-[node name="Point3" parent="." instance=ExtResource("3_4ge6k")]
+[node name="Point3" parent="." instance=ExtResource("3_ksh6w")]
+z_index = 4
 
-[node name="Vec1" parent="." instance=ExtResource("4_l6owj")]
+[node name="Tri1" parent="." instance=ExtResource("5_ksh6w")]
+z_index = 3
 
-[node name="Vec2" parent="." instance=ExtResource("4_l6owj")]
+[node name="Tri2" parent="." instance=ExtResource("5_ksh6w")]
+z_index = 2
 
-[node name="Vec3" parent="." instance=ExtResource("4_l6owj")]
+[node name="Vec1" parent="." instance=ExtResource("4_ocsrx")]
+z_index = 1
 
-[node name="AesLine1" parent="." instance=ExtResource("4_l6owj")]
+[node name="Vec2" parent="." instance=ExtResource("4_ocsrx")]
+z_index = 1
 
-[node name="AesLine2" parent="." instance=ExtResource("4_l6owj")]
-
-[node name="AesLine3" parent="." instance=ExtResource("4_l6owj")]
+[node name="Vec3" parent="." instance=ExtResource("4_ocsrx")]
+z_index = 1

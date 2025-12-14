@@ -1,15 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgiqlv2kr3ftq"]
+[gd_scene load_steps=4 format=3 uid="uid://6wivs1qqrv1"]
 
 [ext_resource type="Script" uid="uid://bvsntr7tdvgod" path="res://enviornment/Game_scn_main.gd" id="1_thad6"]
-[ext_resource type="PackedScene" uid="uid://36n1qwtck540" path="res://entities/StatChart/StatChart.tscn" id="2_8hsav"]
+[ext_resource type="PackedScene" uid="uid://d2kihlqndp2vs" path="res://entities/StatChart/StatChart.tscn" id="2_8hsav"]
 [ext_resource type="PackedScene" uid="uid://bpegykryndjg1" path="res://entities/SpinBoxLabel/SpinBoxLabel.tscn" id="3_8hsav"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_thad6")
 
 [node name="StatChart" parent="." instance=ExtResource("2_8hsav")]
-position = Vector2(544, 256)
-slf_update_spd = 0.25
+position = Vector2(536, 216)
 
 [node name="SpinBoxLabel1" parent="." instance=ExtResource("3_8hsav")]
 offset_left = 224.0

@@ -57,10 +57,14 @@ func _process(delta: float) -> void:
 # We have distance, and we know the time we want to take to travel the distance.
 # Therefore, the speed will be abs(logical position - actual pos) / time
 func change_pos(in_pos: int) -> void:
+	if in_pos > 5 or in_pos < 1:
+		return
 	slf_logical_pos = in_pos * slf_unit
 	slf_actual_spd = abs(slf_logical_pos - slf_actual_pos) / slf_logical_spd
 	
 func increment_pos(in_amnt: int) -> void:
+	if (in_amnt + slf_logical_pos) > 5 or (in_amnt + slf_logical_pos) < 1:
+		return
 	slf_logical_pos += in_amnt * slf_unit
 	slf_actual_spd = abs(slf_logical_pos - slf_actual_pos) / slf_logical_spd
 
